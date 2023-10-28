@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 
-class Program
+class ProgramCpf
 {
-    static void Main()
+    public static void Executar()
     {
         Hashtable cpfTelefone = new Hashtable();
 
@@ -17,7 +17,7 @@ class Program
             Console.WriteLine("1 - Registrar um novo telefone");
             Console.WriteLine("2 - Imprimir todos os telefones registrados");
             Console.WriteLine("3 - Buscar telefone por CPF");
-            Console.WriteLine("0 - Encerrar Atendimentos");
+            Console.WriteLine("0 - Encerrar sistema");
 
             string opcao = Console.ReadLine() ?? "";
 
@@ -71,7 +71,6 @@ class Program
 
     static void BuscaPorCPF(Hashtable cpfTelefone)
     {
-
         Console.Write("Informe o CPF a ser pesquisado: ");
         string cpfPesquisa = Console.ReadLine();
 
